@@ -33,7 +33,7 @@ const Signup = () => {
     }
 
     try {
-      await axios.post("http://localhost:3000/user", { email, password });
+      await axios.post("https://finalassignment-backend.onrender.com/user", { email, password });
       setSuccessMessage("Signup successful! Redirecting to login...");
       setTimeout(() => navigate('/login'), 2000);
     } catch (error) {
